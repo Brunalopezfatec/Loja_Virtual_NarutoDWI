@@ -1,81 +1,18 @@
 /* Geral */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #424141e0;
     margin: 0;
     padding: 0;
 }
 
-h1, h5 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* Header */
 header {
-    background-image: url('https://example.com/naruto-background.jpg'); /* Exemplo de fundo temático */
+    background-image: url('../Loja_Virtual_Naruto/img/imagem\ de\ fundo\ editada.jpg'); /* Exemplo de fundo temático */
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #ee5f0c;
     padding: 2rem 0;
 }
 
-header h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
 /* Cards de produtos */
-.card {
-    border: none;
-    transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-title {
-    color: #ff9800;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.card-text {
-    font-size: 0.9rem;
-    color: #333;
-}
-
-.btn-primary {
-    background-color: #ff9800;
-    border-color: #ff9800;
-}
-
-.btn-primary:hover {
-    background-color: #e67e22;
-    border-color: #e67e22;
-}
-
-/* Footer */
-footer {
-    background-color: #212529;
-    color: #fff;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-}
