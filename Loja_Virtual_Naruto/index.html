@@ -13,18 +13,32 @@
         <p>Encontre produtos dos seus personagens favoritos</p>
     </header>
 
-    <main class="container my-5">
-        <section class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/Loja_Virtual_Naruto/img/camiseta.jfif" class="card-img-top" alt="Produto Naruto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">CAMISETAS</h5>
-                        <p class="card-text">Descrição detalhada do item.</p>
-                        <a href="#" class="btn btn-primary">ADICIONAR AO CARRINHO</a>
+    <div class="login-container">
+                <form>
+                    <div class="form-group">
+                        <label for="login">Login</label>
+                        <input type="text" id="login" class="form-control" placeholder="login">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" class="form-control" placeholder="senha">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="login()">Entrar</button>
+                </form>
             </div>
+
+                <main class="container my-5">
+                    <section class="row">
+                        <div class="col-md-4">
+                             <div class="card">
+                                <img src="/Loja_Virtual_Naruto/img/camiseta.jfif" class="card-img-top" alt="Produto Naruto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">CAMISETAS</h5>
+                                    <p class="card-text">Descrição detalhada do item.</p>
+                                     <a href="#" class="btn btn-primary">ADICIONAR AO CARRINHO</a>
+                                </div>
+                            </div>
+                        </div>
             <div class="col-md-4">
                 <div class="card">
                     <img src="/Loja_Virtual_Naruto/img/canecas.jfif" class="card-img-top" alt="Produto Naruto 2">

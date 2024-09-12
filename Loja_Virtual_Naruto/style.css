@@ -4,6 +4,7 @@ body {
     background-color: #424141e0;
     margin: 0;
     padding: 0;
+
 }
 
 /* Header */
@@ -15,4 +16,39 @@ header {
     padding: 2rem 0;
 }
 
-/* Cards de produtos */
+.login-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 350px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: row
+}
+
+.login-container .form-group {
+    margin-bottom: 10px;
+}
+
+.login-container .form-control {
+    font-size: 0.875rem;
+    height: 2.5rem;
+}
+
+.login-container .btn {
+    font-size: 0.875rem;
+    height: 2.5rem;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    max-height: 200px;
+
+}
