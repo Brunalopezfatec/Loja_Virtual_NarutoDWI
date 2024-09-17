@@ -8,12 +8,11 @@ body {
 
 /* Header */
 .bg-header {
-  background-image: url("./img/Cabeçalho\ site.jpg");
+  background-image: url("./assets/img/Cabeçalho\ site.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 4rem 0;
-  
 }
 
 header h1 {
@@ -151,5 +150,4 @@ footer .container {
 #informacoes {
   text-align: center;
   border: 25px solid white;
- 
 }
