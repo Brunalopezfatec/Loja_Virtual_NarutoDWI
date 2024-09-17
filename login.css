@@ -1,0 +1,91 @@
+/* Geral */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-image: url("../Loja_Virtual_Naruto/img/imagem\ de\ fundo\ editada.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0; 
+}
+
+h1.display-4 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem; 
+}
+
+/* Formulário de Login */
+section .form-group {
+  margin-bottom: 1.5rem; 
+}
+
+form h2 {
+  color: #ee5f0c; 
+  font-weight: bold; 
+}
+
+.form-control {
+  height: 2.75rem; 
+  border-radius: 0.25rem; 
+}
+
+.btn-primary {
+  background-color: #ee5f0c; 
+  border-color: #ee5f0c; 
+  transition: background-color 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #cc4f0b; 
+  border-color: #cc4f0b; 
+}
+
+/* Footer */
+footer {
+  background-color: #ee5f0c; 
+  color: #fff; 
+}
+
+footer h5 {
+  font-size: 1.25rem; 
+  margin-bottom: 1rem; 
+  color: #fff; 
+}
+
+footer p {
+  font-size: 0.9rem; 
+  color: #fff; 
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+footer a:hover {
+  color: #fff; 
+  text-decoration: underline; 
+}
+
+footer .list-unstyled {
+  padding-left: 0; 
+  list-style: none; 
+}
+
+footer .text-white {
+  color: #fff !important; 
+}
+
+footer .container {
+  max-width: 960px; 
+}
