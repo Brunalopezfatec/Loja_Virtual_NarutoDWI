@@ -11,25 +11,30 @@
 </head>
 
 <body>
-  <header class="bg-header text-white text-center py-4">
-    <div class="container">
-      <h1 class="display-4">Loja Virtual Naruto</h1>
-      <p class="lead">Encontre produtos dos seus personagens favoritos</p>
-      <nav>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="./login.html" class="btn btn-light">Login</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="./sobrenos.html" class="btn btn-outline-light">Sobre</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="./index.html" class="btn btn-outline-light">Pagina Inicial</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <nav class="navbar">
+        <div class="container-fluid d-flex align-items-center">
+            <!-- Grid para a logo -->
+            <div class="d-flex align-items-center col-6">
+            <a href="./home.html"
+                ><img
+                src="./assets/img/Naruto-01.svg"
+                alt="Logo"
+                width="30px"
+                height="auto"
+            /></a>
+            </div>
+            <!-- Grid para os itens à direita -->
+            <div class="d-flex justify-content-end align-items-center col-6">
+            <a class="nav-link" href="./home.html">Home</a>
+            <a class="nav-link" href="./carrinho.html">Carrinho</a>
+            <a class="nav-link" href="./sobrenos.html">Sobre Nós</a>
+            <a class="nav-link" href="#contato">Contato</a>
+            <a href="./login.html"
+                ><button class="btn btn-login ms-3">Login</button></a
+            >
+            </div>
+        </div>
+        </nav>
   <section class="h-100">
     <div class="container h-100 py-5">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -155,32 +160,25 @@
       </div>
     </div>
   </section>
- 
-
-
-
-
-  <footer class="bg-footer text-white text-center py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Loja Virtual Naruto</h5>
-          <p>Produtos dos seus personagens favoritos.</p>
-        </div>
-        <div class="col-md-6">
-          <h5>Links Úteis</h5>
-          <ul class="list-unstyled">
-            <li><a href="./index.html" class="text-white">Página Principal</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <p class="mb-0">©️ 2023 Loja Virtual Naruto. Todos os direitos reservados.</p>
-        <p class="small">Desenvolvido por Ana Luiza <br> Barbara Chacon <br> Bruna Lopez <br> Renata Lima <br> Thais
-          Ferreira</p>
-      </div>
-    </div>
-  </footer>
+        <!-- Footer -->
+        <footer id="contato" class="footer bg-dark text-white text-center py-3">
+          <div class="container">
+              <img
+              src="./assets/img/Naruto-01.svg"
+              alt=""
+              width="40px"
+              height="auto"
+              />
+              <p class="developer-text">
+              Desenvolvido por: <br />
+              Ana Luiza | Barbara Chacon | Bruna Lopez | Renata Lima | Thais
+              Ferreira
+              </p>
+              <p class="copyright">
+              © 2023 Loja Virtual Naruto. Todos os direitos reservados.
+              </p>
+          </div>
+          </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -1,65 +1,110 @@
-/* Geral */
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f8f9fa;
+/* Configura o layout principal usando Flexbox */
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Header */
-header {
-  background-image: url("./assets/img/imagem\ de\ fundo\ editada.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 3rem 0;
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Faz o body ocupar toda a altura da tela */
 }
 
-h1.display-4 {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* O conteúdo principal da página */
+.container {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  padding-top: 80px;  /* Espaço para a navbar fixa */
 }
 
-p {
-  font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
+/* Navbar */
+.navbar {
   background-color: #ee5f0c;
-  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-footer h5 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: #fff;
+/* Navbar Logo */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
-footer p {
-  font-size: 0.9rem;
-  color: #fff;
+/* Links da Navbar */
+.navbar .nav-link {
+  color: white;
+  margin-left: 15px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.navbar .nav-link:hover {
+  color: #f2f2f2;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
-footer a:hover {
-  color: #fff;
-  text-decoration: underline;
+/* Botão de Login */
+.btn-login {
+  background-color: white;
+  color: #ee5f0c;
+  border: 1px solid white;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
 }
 
-footer .list-unstyled {
-  padding-left: 0;
-  list-style: none;
+.btn-login:hover {
+  background-color: #f2f2f2;
+  color: #ee5f0c;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
-footer .text-white {
-  color: #fff !important;
+/* Animações CSS */
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
-footer .container {
-  max-width: 960px;
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* Estilos para o Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: auto; /* Faz o footer ficar sempre no fundo */
+}
+
+footer img {
+  width: 40px;
+  height: auto;
 }
