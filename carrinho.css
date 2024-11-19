@@ -108,3 +108,11 @@ footer img {
   width: 40px;
   height: auto;
 }
+
+.btn {
+  cursor: pointer;
+}
+.quantity {
+  width: 60px;
+  text-align: center;
+}

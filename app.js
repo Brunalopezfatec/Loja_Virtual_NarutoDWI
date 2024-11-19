@@ -1,34 +1,49 @@
-function listaUsuarios() {
-  return [
-    { id: 1, login: "Bruna", password: "1234@", email: "bruna@gmail.com" },
-    { id: 2, login: "Renata", password: "1234@", email: "Renata@gmail.com" },
-    { id: 3, login: "Ana", password: "1234@", email: "Ana@gmail.com" },
-    { id: 4, login: "Barbara", password: "1234@", email: "Barbara@gmail.com" },
-    { id: 5, login: "Thais", password: "1234@", email: "Thais@gmail.com" },
-    { id: 6, login: "Bruno", password: "1234@", email: "Bruno@gmail.com" },
-  ];
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const cartItems = document.querySelector('#cart-items');
+  const cartTotal = document.querySelector('#cart-total');
 
-const todosUsuarios = listaUsuarios();
+  // Atualiza o total do carrinho
+  const updateCartTotal = () => {
+    let total = 0;
+    const items = document.querySelectorAll('.cart-item');
+    items.forEach(item => {
+      const quantity = parseInt(item.querySelector('.quantity').value) || 0;
+      const price = parseFloat(item.dataset.price) || 0;
+      total += quantity * price;
+    });
+    cartTotal.textContent = `R$${total.toFixed(2)}`;
+  };
 
-function login() {
-  // Obtendo os valores do inputs pelo seletor id
-  const emailLogin = document.getElementById("emailLogin").value;
-  const passwordLogin = document.getElementById("passwordLogin").value;
+  // Ações de incremento e decremento
+  cartItems.addEventListener('click', (e) => {
+    const target = e.target;
+    const cartItem = target.closest('.cart-item');
+    if (!cartItem) return;
 
-  // Resolução com laço de repetição para verificação de toda lista de usuários
-  const findUserByEmail = todosUsuarios.find((user) => user.email === emailLogin);
+    const quantityInput = cartItem.querySelector('.quantity');
+    let quantity = parseInt(quantityInput.value);
 
-  if (!findUserByEmail) {
-    alert("Credenciais inválidas");
-    return; // Se não encontrar o email, sai da função
-  }
+    if (target.classList.contains('increment')) {
+      quantityInput.value = quantity + 1;
+    } else if (target.classList.contains('decrement') && quantity > 0) {
+      quantityInput.value = quantity - 1;
+    }
+    updateCartTotal();
+  });
 
-  if (findUserByEmail.password === passwordLogin) {
-    alert("Login efetuado com sucesso!");
-    // Redireciona para home.html após login bem-sucedido
-    window.location.href = "home.html";
-  } else {
-    alert("Credenciais inválidas");
-  }
-}
+  // Remove item do carrinho
+  cartItems.addEventListener('click', (e) => {
+    if (e.target.classList.contains('remove-item')) {
+      const cartItem = e.target.closest('.cart-item');
+      cartItem.remove();
+      updateCartTotal();
+    }
+  });
+
+  // Atualiza o total ao alterar manualmente a quantidade
+  cartItems.addEventListener('input', (e) => {
+    if (e.target.classList.contains('quantity')) {
+      updateCartTotal();
+    }
+  });
+});
