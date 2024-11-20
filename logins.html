@@ -38,7 +38,7 @@
         <div class="container-fluid d-flex align-items-center">
             <!-- Grid para a logo -->
             <div class="d-flex align-items-center col-6">
-            <a href="./index.html"
+            <a href="./home.html"
                 ><img
                 src="./assets/img/Naruto-01.svg"
                 alt="Logo"
@@ -49,7 +49,6 @@
             <!-- Grid para os itens à direita -->
             <div class="d-flex justify-content-end align-items-center col-6">
             <a class="nav-link" href="./index.html">Home</a>
-            <a class="nav-link" href="./carrinho.html">Carrinho</a>
             <a class="nav-link" href="./sobrenos.html">Sobre Nós</a>
             <a class="nav-link" href="#contato">Contato</a>
             <a href="./login.html"
@@ -61,44 +60,34 @@
         <section class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-            <form onsubmit="login()" class="p-4 bg-light shadow-sm rounded">
-                <h2 class="mb-4 text-center">Login</h2>
-                <div class="form-group">
-                <label for="login">Endereço de e-mail</label>
-                <input
-                    type="email"
-                    class="form-control"
-                    id="emailLogin"
-                    placeholder="Seu e-mail"
-                />
-                </div>
-                <div class="form-group">
-                <label for="password">Senha</label>
-                <input
-                    type="password"
-                    class="form-control"
-                    id="passwordLogin"
-                    placeholder="Senha"
-                />
-                </div>
-                <div class="form-group form-check">
-                <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                    >Lembrar Login</label
-                >
-                </div>
-                <button
-                id="buttonSubmit"
-                type="submit"
-                class="btn btn-primary btn-block"
-                >
-                Enviar
-                </button>
-            </form>
+                <form onsubmit="return login(event)" class="p-4 bg-light shadow-sm rounded">
+                    <h2 class="mb-4 text-center">Login</h2>
+                    <div class="form-group">
+                        <label for="emailLogin">Endereço de e-mail</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="emailLogin"
+                            placeholder="Seu e-mail"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordLogin">Senha</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="passwordLogin"
+                            placeholder="Senha"
+                        />
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1">Lembrar Login</label>
+                    </div>
+                    <button id="buttonSubmit" type="submit" class="btn btn-primary btn-block">
+                        Enviar
+                    </button>
+                </form>
             </div>
         </div>
         </section>

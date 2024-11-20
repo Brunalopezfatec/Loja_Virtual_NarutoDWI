@@ -1,0 +1,144 @@
+.navbar {
+    background-color: #ee5f0c;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.navbar .nav-link {
+    color: white;
+    margin-left: 15px;
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.btn-login {
+    background-color: white;
+    color: #ee5f0c;
+    border: 1px solid white;
+    animation-fill-mode: forwards;
+}
+
+.btn-login:hover {
+    background-color: #f2f2f2;
+    color: #ee5f0c;
+}
+
+.bg-custom {
+    background-color: #ee5f0c !important; /* Use !important para sobrescrever estilos do Bootstrap */
+    color: white; /* Garante que o texto permaneça legível */
+}
+
+#carouselExampleControls {
+    max-width: 2000px;
+    margin: 20px auto; /* Centralizar o carrossel */
+    overflow: hidden; /* Garantir que os elementos respeitem as bordas */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#carouselExampleControls .carousel-inner img {
+    height: 600px; /* Altura ajustada */
+    object-fit: cover; /* As imagens se ajustam ao container sem distorção */
+}
+
+/* Botões de navegação */
+#carouselExampleControls .carousel-control-prev-icon,
+#carouselExampleControls .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+    border-radius: 50%; /* Ícones arredondados */
+    padding: 10px;
+}
+
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next {
+    width: 50px; /* Reduzir o tamanho dos botões */
+}
+
+
+.hidden {
+    display: none;
+}
+
+#cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 2px solid #ee5f0c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#cart-modal h2 {
+    color: #ee5f0c;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cart-items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#cart-items div:last-child {
+    border-bottom: none;
+}
+
+#cart-items p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: #ee5f0c;
+}
+
+#cart-modal button img {
+    margin-bottom: 5px;
+}
+#cart-modal button {
+    transition: transform 0.2s ease-in-out;
+}
+#cart-modal button:hover {
+    transform: scale(1.1);
+}
+
+button.close-cart {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #ee5f0c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.close-cart:hover {
+    background-color: #ee5f0c;
+}
+
+button.remove-item {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button.remove-item:hover {
+    color: #ee5f0c;
+}
