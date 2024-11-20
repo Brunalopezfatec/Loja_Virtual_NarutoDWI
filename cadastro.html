@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Virtual Naruto</title>
+    <link
+        rel="shortcut icon"
+        href="./assets/img/Naruto-01.svg"
+        type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./logins.css" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"
+    />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"
+    ></script>
+    <style>
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+            transition: background-color 0.3s ease;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+    }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="container-fluid d-flex align-items-center">
+            <!-- Grid para a logo -->
+            <div class="d-flex align-items-center col-6">
+            <a href="./index.html"
+                ><img
+                src="./assets/img/Naruto-01.svg"
+                alt="Logo"
+                width="30px"
+                height="auto"
+            /></a>
+            </div>
+            <!-- Grid para os itens à direita -->
+            <div class="d-flex justify-content-end align-items-center col-6">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./sobrenos.html">Sobre Nós</a>
+            <a class="nav-link" href="#contato">Contato</a>
+            <a href="./logins.html"
+                ><button class="btn btn-login ms-3">Login</button></a
+            >
+            </div>
+        </div>
+        </nav>
+        <section class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form onsubmit="return register(event)" class="p-4 bg-light shadow-sm rounded">
+                        <h2 class="mb-4 text-center">Cadastro</h2>
+                        <div class="form-group">
+                            <label for="emailRegister">Endereço de e-mail</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="emailRegister"
+                                placeholder="Seu e-mail"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRegister">Senha</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="passwordRegister"
+                                placeholder="Senha"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirme a senha</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="confirmPassword"
+                                placeholder="Confirme sua senha"
+                                required
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">
+                            Cadastrar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="contato" class="footer bg-dark text-white text-center py-3">
+            <div class="container">
+                <img
+                src="./assets/img/Naruto-01.svg"
+                alt=""
+                width="40px"
+                height="auto"
+                />
+                <p class="developer-text">
+                Desenvolvido por: <br />
+                Ana Luiza | Barbara Chacon | Bruna Lopez | Renata Lima | Thais
+                Ferreira
+                </p>
+                <p class="copyright">
+                © 2023 Loja Virtual Naruto. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+    <script src="./cadastro.js"></script>
+</body>
+</html>
+    
