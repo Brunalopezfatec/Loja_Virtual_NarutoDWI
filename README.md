@@ -1,5 +1,9 @@
 # Site de Venda de Produtos - Tema Naruto
 
+## Login E Site
+    email: "usuario1@example.com", password: "senha123"  
+    email: "usuario2@example.com", password: "senha456"
+
 ## Descrição
 Este projeto consiste em um site de venda de produtos inspirado no universo de Naruto, desenvolvido como parte da disciplina de Desenvolvimento Web na Faculdade de Tecnologia do Estado de São Paulo (Fatec Diadema - Luigi Papaiz).
 
